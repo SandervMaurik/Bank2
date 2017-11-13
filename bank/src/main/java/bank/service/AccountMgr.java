@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 
 public class AccountMgr {
 
-    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("bankPU");
+    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("BankPU");
 
     public Account createAccount(Long accountNr) {
         EntityManager em = emf.createEntityManager();

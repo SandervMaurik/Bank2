@@ -10,7 +10,7 @@ import javax.persistence.Persistence;
 
 public class FinancialMgr {
 
-    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("bankPU");
+    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("BankPU");
 
     public Boolean transfer(Long fromAccountNr, Long toAccountNr, Long amount) {
         EntityManager em = emf.createEntityManager();
