@@ -23,7 +23,7 @@ public class DatabaseCleaner {
             deleteEntities(entityType);
         }
         em.getTransaction().commit();
-        em.close();
+       // em.close();
     }
 
     private void deleteEntities(Class<?> entityType) {
